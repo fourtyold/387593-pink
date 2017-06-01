@@ -1,0 +1,66 @@
+.users-photos {
+  margin-top: 50px;
+}
+
+.users-photos__panorama {
+  margin-bottom: 20px;
+}
+
+.users-photos__panorama-photo {
+  position: relative;
+  text-align: center;
+}
+
+.users-photos__item {
+  margin-bottom: 21px;
+}
+
+.users-photos__img {
+  vertical-align: bottom;
+}
+
+.users-photos__daily-panorama {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.users-photos__content-wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.users-photos__comment {
+  margin: 0;
+  padding: 0;
+  padding-top: 17px;
+  padding-left: 18px;
+  padding-bottom: 22px;
+  color: rgb(40, 54, 69);
+  background-color: rgb(242, 242, 242);
+}
+
+.users-photos__comment-author {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+.users-photos__comment-name {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: none;
+}
+
+.users-photos__comment-text {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}

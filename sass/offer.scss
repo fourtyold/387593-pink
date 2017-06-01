@@ -1,0 +1,39 @@
+.offer {
+  background-color: $white-color;
+}
+
+.offer__text-wrapper {
+  width: 280px;
+  padding: 0 20px;
+  padding-top: 45px;
+  margin: 0 auto;
+}
+
+.offer__text {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  color: rgb(40, 54, 69);
+  text-align: center;
+}
+
+.offer__form {
+  outline: 1px solid black;
+}
+
+.offer__required {
+  margin: 0;
+  margin-top: 35px;
+  padding: 0;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.offer__asterisk {
+  color: rgb(210, 40, 86);
+}

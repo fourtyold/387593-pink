@@ -1,0 +1,22 @@
+.user-post {
+  background-color: rgb(242, 242, 242);
+  padding-top: 21px;
+  padding-bottom: 28px;
+}
+
+.user-post__content-wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.user-post__user-photo {
+  margin-bottom: 35px;
+}
+
+.user-post__form {
+  margin: 0;
+  padding: 0;
+  min-height: 280px;
+  outline: 1px solid black;
+}
