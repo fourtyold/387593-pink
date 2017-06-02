@@ -15,12 +15,9 @@
 
 .get-app__picture {
   height: 395px;
-  background-image: url("../img/iphone-hand-mobile@1x.png"),
-                    url("../img/bg-back-mobile@1x.jpg");
-  background-position: 47% 100%,
-                       50% 100%;
-  background-repeat: no-repeat,
-                     no-repeat;
+  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+  background-position: 47% 100%, 50% 100%;
+  background-repeat: no-repeat, no-repeat;
 }
 
 .get-app__content-wrapper {
