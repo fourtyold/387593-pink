@@ -1,0 +1,22 @@
+.prices {
+  padding-top: 130px;
+  padding-bottom: 45px;
+  background-color: rgb(242, 242, 242);
+}
+
+.prices__slider-slide {
+  height: 280px;
+  margin-bottom: 35px;
+  outline: 1px solid black;
+}
+
+.prices__list {
+  display: none;
+}
+
+.prices__slider-controls {
+  width: 100px;
+  height: 20px;
+  margin: 0 auto;
+  outline: 1px solid black;
+}

@@ -1,0 +1,14 @@
+.systems {
+  outline: 1px solid green;
+  margin-bottom: 21px;
+}
+
+.systems__items {
+  list-style: none;
+  display: flex;
+  min-height: 55px;
+  font-size: 0;
+  line-height: 0;
+  margin: 0;
+  padding: 0;
+}

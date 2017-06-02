@@ -1,0 +1,24 @@
+.photos-content {
+  padding-top: 45px;
+  padding-bottom: 40px;
+  background-color: $white-color;
+}
+
+.photos-content__content-wrapper {
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.photos-content__text {
+  margin: 0;
+  padding: 0 15px;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.photos-content__text--bottom {
+  margin-top: 38px;
+}

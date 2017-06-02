@@ -1,0 +1,64 @@
+.features {
+  padding-top: 45px;
+  background-color: $white-color;
+}
+
+.features__text {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 34px;
+  padding: 0 20px;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.features__content-wrapper {
+  background-color: rgb(242, 242, 242);
+  margin-top: 117px;
+}
+
+.features__list {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  list-style: none;
+  text-align: center;
+}
+
+.features__item-picture {
+  display: none;
+}
+
+.features__item-title {
+  margin: 0;
+  margin-top: 31px;
+  margin-bottom: 13px;
+  padding: 0;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $black-color;
+}
+
+.features__item-text {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $black-color;
+}
+
+.features__hello-picture {
+  height: 317px;
+  background-color: rgb(242, 242, 242);
+  background-image: url("../img/iphone-screen-mobile@1x.png");
+  background-position: 50% 42px;
+  background-repeat: no-repeat;
+}
+
+.features__science {
+  display: none;
+}
