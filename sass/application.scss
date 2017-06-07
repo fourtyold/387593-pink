@@ -3,6 +3,13 @@
   padding-top: 37px;
   min-height: 303px;
   outline: 1px solid black;
+  @media ($tablet) {
+    order: 2;
+    background-color: $white-color;
+  }
+  @media ($desktop) {
+    width: 50%;
+  }
 }
 
 .application__content-wrapper {

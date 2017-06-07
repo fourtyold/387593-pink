@@ -1,31 +1,38 @@
 .get-app {
+  min-height: 243px;
+  margin-top: -66px;
+  padding-top: 490px;
   background-color: rgb(29, 38, 49);
+  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+  background-position: 0 176px, top center;
+  background-repeat: no-repeat, no-repeat;
+  @media ($tablet) {
+    margin-top: -110px;
+    padding-top: 210px;
+    min-height: 523px;
+    background-position: 60% 100%, top center;
+    background-size: 450px, cover;
+  }
 }
 
 .get-app__wrapper {
-  width: 320px;
-  margin: 0 auto;
-  background-color: rgb(29, 38, 49);
-  outline: 1px solid yellow;
+  @media ($tablet) {
+      width: 48.4%;
+  }
+  @media ($desktop) {
+      width: 31.25%;
+  }
 }
 
 .get-app__title {
   display: none;
-}
-
-.get-app__picture {
-  height: 395px;
-  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
-  background-position: 47% 100%, 50% 100%;
-  background-repeat: no-repeat, no-repeat;
-}
-
-.get-app__content-wrapper {
-  width: 280px;
-  margin: 0 auto;
-  padding: 0 20px;
-  padding-top: 28px;
-  padding-bottom: 30px;
+  font-size: 40px;
+  line-height: 45px;;
+  font-weight: 300;
+  color: $white-color;
+  @media ($tablet) {
+    display: block;
+  }
 }
 
 .get-app__text {

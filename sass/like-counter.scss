@@ -1,3 +1,6 @@
 .like-counter {
   margin-top: 10px;
+  @media ($tablet) {
+    margin-top: auto;
+  }
 }

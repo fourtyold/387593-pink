@@ -4,6 +4,9 @@
   line-height: 18px;
   font-weight: 400;
   text-align: center;
+  @media ($tablet) {
+    margin-top: 0;
+  }
 }
 
 .copyrights__link {

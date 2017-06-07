@@ -2,16 +2,30 @@
   background-color: rgb(242, 242, 242);
   padding-top: 21px;
   padding-bottom: 28px;
-}
 
-.user-post__content-wrapper {
-  width: 280px;
-  margin: 0 auto;
-  padding: 0 20px;
+  .container {
+    @media ($tablet) {
+      display: flex;
+      justify-content: space-between;
+    }
+    @media ($desktop) {
+      justify-content: flex-start;
+    }
+  }
 }
 
 .user-post__user-photo {
   margin-bottom: 35px;
+  text-align: center;
+  @media ($tablet) {
+    width: 48.4%;
+    margin: 0;
+    min-height: 400px;
+    background-color: pink;
+  }
+  @media ($desktop) {
+    width: 50%;
+  }
 }
 
 .user-post__form {
@@ -19,4 +33,10 @@
   padding: 0;
   min-height: 280px;
   outline: 1px solid black;
+  @media ($tablet) {
+    width: 48.4%;
+  }
+  @media ($desktop) {
+    width: 43.6%;
+  }
 }

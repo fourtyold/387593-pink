@@ -17,8 +17,14 @@
   line-height: 30px;
   font-weight: 400;
   text-align: center;
-}
-
-.photos-content__text--bottom {
-  margin-top: 38px;
+  @media ($tablet) {
+    padding: 0 50px;
+    font-size: 18px;
+  }
+  @media ($desktop) {
+    padding: 0 150px;
+  }
+  &--bottom {
+    margin-top: 38px;
+  }
 }

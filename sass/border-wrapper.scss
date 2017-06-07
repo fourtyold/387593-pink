@@ -1,0 +1,6 @@
+.border-wrapper {
+  @media ($tablet) {
+    border: 2px solid gray;
+    border-radius: 2px;
+  }
+}

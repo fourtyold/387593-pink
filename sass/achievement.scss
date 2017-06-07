@@ -3,12 +3,19 @@
   background-color: rgb(242, 242, 242);
   min-height: 566px;
   outline: 1px solid black;
-}
+  @media ($tablet) {
+    order: 4;
+    background-color: $white-color;
+  }
+  @media ($desktop) {
+    width: 100%;
+  }
 
-.achievement__content-wrapper {
-  width: 280px;
-  margin: 0 auto;
-  padding: 0 20px;
+  .border-wrapper {
+    @media ($desktop) {
+      padding: 0 60px;
+    }
+  }
 }
 
 .achievement__title {
@@ -26,4 +33,15 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  @media ($tablet) {
+    margin-left: 60px;
+  }
+  @media ($desktop) {
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+  }
 }

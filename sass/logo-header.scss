@@ -1,7 +1,21 @@
 .logo-header {
-  width: 280px;
-  margin: 0 auto;
-  padding: 0 20px;
-  background-color: rgb(40, 54, 69);
-  padding: 22px 19px;
+  @media ($pre-desktop) {
+    min-width: 280px;
+    margin: 0 auto;
+    padding: 22px 20px;
+    background-color: rgb(40, 54, 69);
+  }
+  @media ($desktop) {
+    width: 150px;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.logo-header__img {
+  @media ($tablet) {
+  width: 150px;
+  height: 40px;
+  }
 }
