@@ -106,16 +106,18 @@
       </section>
       <section class="user-post">
         <div class="container">
-          <div class="user-post__user-photo"><img src="img/photo-7-mobile@1x.jpg" width="280" height="374" alt=""></div>
           <form class="user-post__form" action="https://echo.htmlacademy.ru/" method="post">
-            <label for="size"></label>
-            <input type="range" min="1" max="100" step="1" id="size">
-            <label for="pouring"></label>
-            <input type="range" min="1" max="100" step="1" id="pouring">
-            <label for="contrast"></label>
-            <input class="" type="range" min="1" max="100" step="1" id="contrast">
-            <button class="btn btn--post" type="submit">Запостить</button>
-            <button class="btn btn--cancel">Отмена</button>
+            <div class="user-post__user-photo"><img src="img/photo-7-mobile@1x.jpg" width="280" height="374" alt=""></div>
+            <div class="user-post__form-controls">
+              <label for="size"></label>
+              <input type="range" min="1" max="100" step="1" id="size">
+              <label for="pouring"></label>
+              <input type="range" min="1" max="100" step="1" id="pouring">
+              <label for="contrast"></label>
+              <input class="" type="range" min="1" max="100" step="1" id="contrast">
+              <button class="btn btn--post" type="submit">Запостить</button>
+              <button class="btn btn--cancel" type="reset">Отмена</button>
+            </div>
           </form>
         </div>
       </section>

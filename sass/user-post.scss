@@ -2,15 +2,19 @@
   background-color: rgb(242, 242, 242);
   padding-top: 21px;
   padding-bottom: 28px;
+}
 
-  .container {
-    @media ($tablet) {
-      display: flex;
-      justify-content: space-between;
-    }
-    @media ($desktop) {
-      justify-content: flex-start;
-    }
+.user-post__form {
+  margin: 0;
+  padding: 0;
+  min-height: 280px;
+  outline: 1px solid black;
+  @media ($tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+  @media ($desktop) {
+    justify-content: flex-start;
   }
 }
 
@@ -28,11 +32,7 @@
   }
 }
 
-.user-post__form {
-  margin: 0;
-  padding: 0;
-  min-height: 280px;
-  outline: 1px solid black;
+.user-post__form-controls {
   @media ($tablet) {
     width: 48.4%;
   }
