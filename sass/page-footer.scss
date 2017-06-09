@@ -3,18 +3,28 @@
   background-color: $white-color;
   padding-top: 54px;
   padding-bottom: 50px;
+  @media ($tablet) {
+    display: block;
+    padding-top: 36px;
+    .container {
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+
+  &--show {
+    display: block;
+  }
 }
 
-.page-footer--show {
-  display: block;
+.page-footer__logo {
+  text-align: center;
+  @media ($tablet) {
+  }
 }
 
 .page-footer__content-wrapper {
   width: 280px;
   margin: 0 auto;
   padding: 0 20px;
-}
-
-.page-footer__logo {
-  text-align: center;
 }

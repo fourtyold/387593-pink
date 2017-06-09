@@ -1,16 +1,21 @@
 .photo-promo {
-  min-height: 142px;
-  padding-top: 27px;
+  min-height: 137px;
+  padding-top: 100px;
+  margin-top: -66px;
   background-color: rgb(44, 57, 74);
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: 50% 24%;
   background-repeat: no-repeat;
-}
-
-.photo-promo__content-wrapper {
-  width: 280px;
-  padding: 0 20px;
-  margin: 0 auto;
+  @media ($tablet) {
+    min-height: 249px;
+    margin-top: -110px;
+    padding-top: 191px;
+    background-size: cover;
+  }
+  @media ($desktop) {
+    min-height: 209px;
+    padding-top: 185px;
+  }
 }
 
 .photo-promo__title {
@@ -21,4 +26,11 @@
   font-weight: 300;
   color: $white-color;
   text-align: center;
+  @media ($tablet) {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  @media ($desktop) {
+    padding: 0 150px;
+  }
 }

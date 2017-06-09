@@ -1,11 +1,27 @@
+.main-nav {
+  z-index: 10;
+  @media ($desktop) {
+    display: flex;
+    align-items: center;
+  }
+}
+
 .main-nav__items {
   margin: 0;
   padding: 0;
   list-style: none;
+  @media ($desktop) {
+    display: flex;
+    min-width: 621px;
+    justify-content: space-between;
+  }
 }
 
 .main-nav__item {
   background-color: rgb(40, 54, 69);
+  @media ($desktop) {
+    background-color: transparent;
+  }
 }
 
 .main-nav__link {
@@ -18,4 +34,9 @@
   text-transform: uppercase;
   color: $white-color;
   padding: 16px 0;
+  @media ($desktop) {
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: none;
+  }
 }

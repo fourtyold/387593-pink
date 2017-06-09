@@ -3,10 +3,62 @@
   background-color: $white-color;
   outline: 1px solid black;
   min-height: 256px;
+  @media ($tablet) {
+    order: 3;
+  }
+  @media ($desktop) {
+    width: 100%;
+  }
+
+  .border-wrapper {
+    display: flex;
+    flex-direction: column;
+    @media ($tablet) {
+      padding: 0 60px;
+    }
+    @media ($desktop) {
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.contact-info__title {
+  display: none;
+  margin: 0;
+  padding: 0 15px;;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: rgb(210, 40, 86);
+  text-transform: uppercase;
+  text-align: center;
+  @media ($tablet) {
+    display: block;
+  }
+  // @media ($desktop) {
+  //   margin: 0 auto;
+  //   margin-top: -20px;
+  // }
 }
 
 .contact-info__content-wrapper {
-  width: 280px;
-  margin: 0 auto;
-  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  @media ($desktop) {
+    width: 45.6%;
+  }
+
+  .text-label {
+    @media ($tablet) {
+      order: 2;
+    }
+  }
+
+  .text-input {
+    @media ($tablet) {
+      order: 1;
+    }
+  }
 }

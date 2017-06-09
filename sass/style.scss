@@ -1,6 +1,7 @@
 @import "global.scss";
 
 //index.html
+@import "container.scss";
 @import "page-header.scss";
 @import "logo-header.scss";
 @import "main-nav.scss";
@@ -19,10 +20,14 @@
 @import "offer.scss";
 @import "subscribe-info.scss";
 @import "text-label.scss";
+@import "text-input.scss";
+@import "border-wrapper.scss";
 @import "achievement.scss";
 @import "contact-info.scss";
 @import "application.scss";
 @import "comment.scss";
+@import "textarea-input.scss";
+@import "send-form.scss";
 @import "social-links.scss";
 @import "copyrights.scss";
 

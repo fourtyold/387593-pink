@@ -1,0 +1,9 @@
+.text-input {
+  flex-grow: 1;
+  &--phone,
+  &--email {
+    @media ($tablet) {
+      padding-right: 62px;
+    }
+  }
+}
