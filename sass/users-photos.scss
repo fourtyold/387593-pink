@@ -1,5 +1,11 @@
 .users-photos {
   margin-top: 50px;
+  @media ($tablet) {
+    margin-top: 76px;
+  }
+  @media ($desktop) {
+    margin-top: 88px;
+  }
 
   .container {
     @media ($tablet) {
@@ -11,7 +17,10 @@
 }
 
 .users-photos__panorama {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
+  @media ($tablet) {
+    margin-bottom: 32px;
+  }
 }
 
 .users-photos__panorama-photo {
@@ -21,30 +30,60 @@
     min-height: 509px;
     background-color: pink;
   }
+  @media ($desktop) {
+    min-height: 506px;
+  }
 }
 
 .users-photos__item {
-  margin-top: 21px;
+  margin-top: 18px;
   @media ($tablet) {
-    // width: 300px;
     width: 48.4%;
+    margin-top: 20px;
     background-color: pink;
     display: flex;
     flex-direction: column;
   }
   @media ($desktop) {
     width: 31.9%;
+    margin-bottom: 33px;
+  }
+
+  .users-photos__comment {
+    @media ($tablet) {
+      min-height: 109px;
+    }
   }
 }
 
 .users-photos__img {
   vertical-align: bottom;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .users-photos__daily-panorama {
   position: absolute;
   top: 0;
-  right: 0;
+  left: 50%;
+  padding: 5px 20px;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $white-color;
+  text-transform: uppercase;
+  background-color: $red-color;
+  @media ($tablet) {
+    top: 57px;
+    margin-left: 169px;
+    padding: 6px 20px;
+  }
+  @media ($desktop) {
+    top: 54px;
+    margin-left: 330px;
+  }
 }
 
 .users-photos__comment {
@@ -59,6 +98,8 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    padding-top: 24px;
+    padding-left: 27px;
   }
 
   &--panorama {
@@ -73,11 +114,27 @@
 
       .like-counter {
         margin-top: 0;
+        padding-right: 59px;
         order: 2;
+
+        &::before {
+          left: 72%;
+        }
       }
 
       .users-photos__comment-text {
         order: 3;
+      }
+    }
+
+    @media ($desktop) {
+
+      .like-counter {
+        padding-right: 62px;
+
+        &::before {
+          left: 70%;
+        }
       }
     }
   }
@@ -105,8 +162,17 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
+  @media ($tablet) {
+    padding-right: 10px;
+  }
 }
 
 .users-photos__photo {
   text-align: center;
+  @media ($tablet) {
+    min-height: 300px;
+  }
+  @media ($desktop) {
+    min-height: 400px;
+  }
 }

@@ -1,13 +1,16 @@
 .contact-info {
-  padding-top: 32px;
+  padding-top: 31px;
+  padding-bottom: 26px;
   background-color: $white-color;
-  outline: 1px solid black;
-  min-height: 256px;
   @media ($tablet) {
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-top: 58px;
     order: 3;
   }
   @media ($desktop) {
     width: 100%;
+    margin-top: 4px;
   }
 
   .border-wrapper {
@@ -15,11 +18,13 @@
     flex-direction: column;
     @media ($tablet) {
       padding: 0 60px;
+      padding-top: 47px;
     }
     @media ($desktop) {
       flex-direction: row;
       justify-content: space-between;
       flex-wrap: wrap;
+      padding-top: 45px;
     }
   }
 }
@@ -36,6 +41,11 @@
   text-align: center;
   @media ($tablet) {
     display: block;
+    width: 230px;
+    margin: 0 auto;
+    margin-bottom: -10px;
+    position: relative;
+    background-color: $white-color;
   }
   // @media ($desktop) {
   //   margin: 0 auto;
@@ -46,18 +56,38 @@
 .contact-info__content-wrapper {
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
+  @media ($tablet) {
+    position: relative;
+    margin-bottom: 30px;
+
+    &::after {
+      content: "";
+      width: 62px;
+      height: 62px;
+      position: absolute;
+      top: -2px;
+      right: -2px;
+      background-color: rgb(190, 194, 199);
+    }
+  }
   @media ($desktop) {
     width: 45.6%;
+    margin-bottom: 11px;
   }
 
-  .text-label {
+  .label {
     @media ($tablet) {
+      padding-left: 17px;
       order: 2;
     }
   }
 
-  .text-input {
+  .input {
     @media ($tablet) {
+      padding-left: 18px;
+      padding-right: 60px;
+      margin-bottom: 13px;
       order: 1;
     }
   }

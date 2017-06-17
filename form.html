@@ -9,20 +9,21 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="logo-header">
-        <picture>
-          <source media="(min-width: 660px) and (max-width: 959px)" srcset="img/logo-pink-blue-mobile.svg">
-          <source media="(min-width: 960px)" srcset="img/logo-pink-blue-mobile.svg">
-          <img class="logo-header__img" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
-        </picture>
-      </div>
       <nav class="main-nav">
+        <div class="logo-header">
+          <picture>
+            <source media="(min-width: 660px) and (max-width: 959px)" srcset="img/logo-pink-blue-mobile.svg">
+            <source media="(min-width: 960px)" srcset="img/logo-pink-blue-mobile.svg">
+            <img class="logo-header__img" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
+          </picture>
+        </div>
         <ul class="main-nav__items">
           <li class="main-nav__item"><a class="main-nav__link" href="#">Главная</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="#">Фотографии</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="#">Конкурс</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
         </ul>
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
       </nav>
     </header>
     <main>
@@ -40,16 +41,16 @@
           <div class="subscribe-info">
             <div class="container">
               <div class="subscribe-info__content-wrapper">
-                <label class="text-label" for="lastname">Фамилия:</label>
-                <input class="text-input" type="text" name="lastname" id="lastname" placeholder="Укажите фамилию *" required>
+                <label class="label label--text" for="lastname">Фамилия:</label>
+                <input class="input input--text" type="text" name="lastname" id="lastname" placeholder="Укажите фамилию *" required>
               </div>
               <div class="subscribe-info__content-wrapper">
-                <label class="text-label" for="name">Имя:</label>
-                <input class="text-input" type="text" name="name" id="name" placeholder="Введите ваше имя *" required>
+                <label class="label label--text" for="name">Имя:</label>
+                <input class="input input--text" type="text" name="name" id="name" placeholder="Введите ваше имя *" required>
               </div>
               <div class="subscribe-info__content-wrapper">
-                <label class="text-label" for="fathers-name">Отчество:</label>
-                <input class="text-input" type="text" name="fathers-name" id="fathers-name" placeholder="Ну и отчество тоже">
+                <label class="label label--text" for="fathers-name">Отчество:</label>
+                <input class="input input--text" type="text" name="fathers-name" id="fathers-name" placeholder="Ну и отчество тоже">
               </div>
             </div>
           </div>
@@ -59,40 +60,28 @@
                 <h3 class="achievement__title">Ваши безбашенные достижения в путешествии</h3>
                 <ul class="achievement__list">
                   <li class="achievement__item">
-                    <label>
-                      <input type="checkbox" name="shark-selfie" checked>
-                      Сделал селфи с акулой
-                    </label>
+                    <input class="input input--checkbox" type="checkbox" name="shark-selfie" id="shark-selfie" checked>
+                    <label class="label label--checkbox" for="shark-selfie">Сделал селфи с акулой</label>
                   </li>
                   <li class="achievement__item">
-                    <label>
-                      <input type="checkbox" name="red-heat" checked>
-                      Обгорел на пляже
-                    </label>
+                    <input class="input input--checkbox" type="checkbox" name="red-heat" id="red-heat" checked>
+                    <label class="label label--checkbox" for="red-heat">Обгорел на пляже</label>
                   </li>
                   <li class="achievement__item">
-                    <label>
-                      <input type="checkbox" name="chuck-norris">
-                      Видел Чака Норриса
-                    </label>
+                    <input class="input input--checkbox" type="checkbox" name="chuck-norris" id="chuck-norris">
+                    <label class="label label--checkbox" for="chuck-norris">Видел Чака Норриса</label>
                   </li>
                   <li class="achievement__item">
-                    <label>
-                      <input type="checkbox" name="souvenir-master">
-                      Накупил сувениров
-                    </label>
+                    <input class="input input--checkbox" type="checkbox" name="souvenir-master" id="souvenir-master">
+                    <label class="label label--checkbox" for="souvenir-master">Накупил сувениров</label>
                   </li>
                   <li class="achievement__item">
-                    <label>
-                      <input type="checkbox" name="hold-tower" checked>
-                      Удержал башню
-                    </label>
+                    <input class="input input--checkbox" type="checkbox" name="hold-tower" id="hold-tower" checked>
+                    <label class="label label--checkbox" for="hold-tower">Удержал башню</label>
                   </li>
                   <li class="achievement__item">
-                    <label>
-                      <input type="checkbox" name="hotel-terror">
-                      Разгромил отель
-                    </label>
+                    <input class="input input--checkbox" type="checkbox" name="hotel-terror" id="hotel-terror">
+                    <label class="label label--checkbox" for="hotel-terror">Разгромил отель</label>
                   </li>
                 </ul>
               </div>
@@ -103,12 +92,12 @@
               <h3 class="contact-info__title">Контактная информация</h3>
               <div class="border-wrapper">
                 <div class="contact-info__content-wrapper">
-                  <label class="text-label" for="phone-number">Номер телефона</label>
-                  <input class="text-input text-input--phone" type="text" name="phone-number" id="phone-number" placeholder="Номер, пожалуйста">
+                  <label class="label label--text" for="phone-number">Номер телефона</label>
+                  <input class="input input--text" type="tel" name="phone-number" id="phone-number" placeholder="Номер, пожалуйста">
                 </div>
                 <div class="contact-info__content-wrapper">
-                  <label class="text-label" for="email">Адрес почты</label>
-                  <input class="text-input text-input--email" type="text" name="email" id="email" placeholder="Введите почту *" required>
+                  <label class="label label--text" for="email">Адрес почты</label>
+                  <input class="input input--text" type="email" name="email" id="email" placeholder="Введите почту *" required>
                 </div>
               </div>
             </div>
@@ -119,22 +108,16 @@
                 <h3 class="application__title">С каким приложением путешествовали?</h3>
                 <ul class="application__list">
                   <li class="application__item">
-                    <label>
-                      <input type="radio" name="OS" value="iOS">
-                      Pink для iOS
-                    </label>
+                    <input class="input input--radio" type="radio" name="OS" value="iOS" id="iOS" checked>
+                    <label class="label label--radio" for="iOS">Pink для iOS</label>
                   </li>
                   <li class="application__item">
-                    <label>
-                      <input type="radio" name="OS" value="Android">
-                      Pink на Android
-                    </label>
+                    <input class="input input--radio" type="radio" name="OS" value="Android" id="android">
+                    <label class="label label--radio" for="android">Pink на Android</label>
                   </li>
                   <li class="application__item">
-                    <label>
-                      <input type="radio" name="OS" value="Windows">
-                      Windows Phone
-                    </label>
+                    <input class="input input--radio" type="radio" name="OS" value="Windows" id="windows">
+                    <label class="label label--radio" for="windows">Windows Phone</label>
                   </li>
                 </ul>
               </div>
@@ -144,7 +127,7 @@
             <div class="container">
               <div class="border-wrapper">
                 <h3 class="comment__title">опишите свои эмоции</h3>
-                <textarea class="textarea-input" name="comment-content" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+                <textarea class="input input--textarea" name="comment-content" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
               </div>
             </div>
           </div>
@@ -156,21 +139,39 @@
           </div>
         </form>
       </section>
-      <footer class="page-footer page-footer--show">
-        <div class="container">
-          <div class="page-footer__logo">
-            <img src="img\logo-pink-blue-mobile.svg" width="150" height="40" alt="Pink">
-          </div>
-          <ul class="social-links">
-            <li class="social-links__item social-links__item--twitter"><a href="#">Твиттер</a></li>
-            <li class="social-links__item social-links__item--facebook"><a href="#">Фейсбук</a></li>
-            <li class="social-links__item social-links__item--youtube"><a href="#">Ютуб</a></li>
-          </ul>
-          <div class="copyrights">
-            Разработано<a class="copyrights__link" href="#"><img src="img\logo-htmlacademy.svg" width="29" height="35" alt="logo">HTML academy</a>
-          </div>
-        </div>
-      </footer>
     </main>
+    <footer class="page-footer page-footer--show">
+      <div class="container">
+        <div class="page-footer__logo">
+          <img src="img\logo-pink-blue-mobile.svg" width="150" height="40" alt="Pink">
+        </div>
+        <ul class="social-links">
+          <li class="social-links__item social-links__item--twitter"><a class="social-links__link" href="#">Твиттер</a></li>
+          <li class="social-links__item social-links__item--facebook"><a class="social-links__link" href="#">Фейсбук</a></li>
+          <li class="social-links__item social-links__item--youtube"><a class="social-links__link" href="#">Ютуб</a></li>
+        </ul>
+        <div class="copyrights">
+          Разработано<a class="copyrights__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="img\logo-htmlacademy.svg" width="29" height="35" alt="logo">HTML academy</a>
+        </div>
+      </div>
+    </footer>
+    <div class="modal-send modal-send--ok">
+      <div class="container">
+        <h3 class="modal-send__title">Ваша заявка отправлена</h3>
+        <p class="modal-send__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время
+          мы рассмотрим её и оповестим вас.</p>
+      </div>
+      <button class="btn btn--modal-close" type="button">Закрыть окно</button>
+    </div>
+    <div class="modal-send modal-send--error">
+      <div class="container">
+        <h3 class="modal-send__title">Что-то пошло не так!</h3>
+        <p class="modal-send__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить.</p>
+      </div>
+      <button class="btn btn--modal-close" type="button">Ок</button>
+    </div>
+    <div class="modal-overlay"></div>
+    </div>
+    <script src="js/script.js"></script>
   </body>
 </html>

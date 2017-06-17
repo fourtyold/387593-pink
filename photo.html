@@ -9,20 +9,21 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="logo-header">
-        <picture>
-          <source media="(min-width: 660px) and (max-width: 959px)" srcset="img/logo-pink-blue-mobile.svg">
-          <source media="(min-width: 960px)" srcset="img/logo-pink-blue-mobile.svg">
-          <img class="logo-header__img" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
-        </picture>
-      </div>
       <nav class="main-nav">
+        <div class="logo-header">
+          <picture>
+            <source media="(min-width: 660px) and (max-width: 959px)" srcset="img/logo-pink-blue-mobile.svg">
+            <source media="(min-width: 960px)" srcset="img/logo-pink-blue-mobile.svg">
+            <img class="logo-header__img" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
+          </picture>
+        </div>
         <ul class="main-nav__items">
           <li class="main-nav__item"><a class="main-nav__link" href="#">Главная</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="#">Фотографии</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="#">Конкурс</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
         </ul>
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
       </nav>
     </header>
     <main>
@@ -38,7 +39,7 @@
         <div class="users-photos">
           <article class="users-photos__panorama">
             <div class="users-photos__panorama-photo">
-              <img class="users-photos__img" src="img\panorama-mobile@1x.jpg" width="320" height="137" alt="">
+              <a href="#"><img class="users-photos__img" src="img\panorama-mobile@1x.jpg" width="320" height="137" alt=""></a>
               <div class="users-photos__daily-panorama">Панорама дня</div>
             </div>
             <div class="container">
@@ -51,7 +52,9 @@
           </article>
           <div class="container">
             <article class="users-photos__item">
-              <div class="users-photos__photo"><img class="users-photos__img" src="img\photo-1-mobile@1x.jpg" width="280" height="180" alt=""></div>
+              <div class="users-photos__photo">
+                <a href="#"><img class="users-photos__img" src="img\photo-1-mobile@1x.jpg" width="280" height="180" alt=""></a>
+              </div>
               <blockquote class="users-photos__comment">
                 <cite class="users-photos__comment-author"><span class="users-photos__comment-name">Левон</span> (5 часов назад)</cite>
                 <p class="users-photos__comment-text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
@@ -59,7 +62,9 @@
               </blockquote>
             </article>
             <article class="users-photos__item">
-              <div class="users-photos__photo"><img class="users-photos__img" src="img\photo-2-mobile@1x.jpg" width="280" height="180" alt=""></div>
+              <div class="users-photos__photo">
+                <a href="#"><img class="users-photos__img" src="img\photo-2-mobile@1x.jpg" width="280" height="180" alt=""></a>
+              </div>
               <blockquote class="users-photos__comment">
                 <cite class="users-photos__comment-author"><span class="users-photos__comment-name">Антон</span> (12 часов назад)</cite>
                 <p class="users-photos__comment-text">Соседи будут рады!</p>
@@ -67,7 +72,9 @@
               </blockquote>
             </article>
             <article class="users-photos__item">
-              <div class="users-photos__photo"><img class="users-photos__img" src="img\photo-3-mobile@1x.jpg" width="280" height="180" alt=""></div>
+              <div class="users-photos__photo">
+                <a href="#"><img class="users-photos__img" src="img\photo-3-mobile@1x.jpg" width="280" height="180" alt=""></a>
+              </div>
               <blockquote class="users-photos__comment">
                 <cite class="users-photos__comment-author"><span class="users-photos__comment-name">Борис</span> (20 часов назад)</cite>
                 <p class="users-photos__comment-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
@@ -75,7 +82,9 @@
               </blockquote>
             </article>
             <article class="users-photos__item">
-              <div class="users-photos__photo"><img class="users-photos__img" src="img\photo-4-mobile@1x.jpg" width="280" height="180" alt=""></div>
+              <div class="users-photos__photo">
+                <a href="#"><img class="users-photos__img" src="img\photo-4-mobile@1x.jpg" width="280" height="180" alt=""></a>
+              </div>
               <blockquote class="users-photos__comment">
                 <cite class="users-photos__comment-author"><span class="users-photos__comment-name">Сергей</span> (25 часов назад)</cite>
                 <p class="users-photos__comment-text">Самая кубанская в мире!</p>
@@ -83,7 +92,9 @@
               </blockquote>
             </article>
             <article class="users-photos__item">
-              <div class="users-photos__photo"><img class="users-photos__img" src="img\photo-5-mobile@1x.jpg" width="280" height="180" alt=""></div>
+              <div class="users-photos__photo">
+                <a href="#"><img class="users-photos__img" src="img\photo-5-mobile@1x.jpg" width="280" height="180" alt=""></a>
+              </div>
               <blockquote class="users-photos__comment">
                 <cite class="users-photos__comment-author"><span class="users-photos__comment-name">Максим</span> (40 часов назад)</cite>
                 <p class="users-photos__comment-text">Где снег-то?</p>
@@ -91,7 +102,9 @@
               </blockquote>
             </article>
             <article class="users-photos__item">
-              <div class="users-photos__photo"><img class="users-photos__img" src="img\photo-6-mobile@1x.jpg" width="280" height="180" alt=""></div>
+              <div class="users-photos__photo">
+                <a href="#"><img class="users-photos__img" src="img\photo-6-mobile@1x.jpg" width="280" height="180" alt=""></a>
+              </div>
               <blockquote class="users-photos__comment">
                 <cite class="users-photos__comment-author"><span class="users-photos__comment-name">Надежда</span> (45 часов назад)</cite>
                 <p class="users-photos__comment-text">Всем GM и взаимные лайки!</p>
@@ -106,15 +119,17 @@
       </section>
       <section class="user-post">
         <div class="container">
-          <form class="user-post__form" action="https://echo.htmlacademy.ru/" method="post">
-            <div class="user-post__user-photo"><img src="img/photo-7-mobile@1x.jpg" width="280" height="374" alt=""></div>
-            <div class="user-post__form-controls">
-              <label for="size"></label>
-              <input type="range" min="1" max="100" step="1" id="size">
-              <label for="pouring"></label>
-              <input type="range" min="1" max="100" step="1" id="pouring">
-              <label for="contrast"></label>
-              <input class="" type="range" min="1" max="100" step="1" id="contrast">
+          <form class="filters-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="filters-form__photo">
+              <a href="#"><img src="img/photo-7-mobile@1x.jpg" width="280" height="374" alt=""></a>
+            </div>
+            <div class="filters-form__controls">
+              <div class="filters-form__editor-icon filters-form__editor-icon--crop filters-form__editor-icon--active"></div>
+              <div class="filters-form__editor-bar filters-form__editor-bar--crop filters-form__editor-bar--active"></div>
+              <div class="filters-form__editor-icon filters-form__editor-icon--fill"></div>
+              <div class="filters-form__editor-bar filters-form__editor-bar--fill"></div>
+              <div class="filters-form__editor-icon filters-form__editor-icon--contrast"></div>
+              <div class="filters-form__editor-bar filters-form__editor-bar--contrast"></div>
               <button class="btn btn--post" type="submit">Запостить</button>
               <button class="btn btn--cancel" type="reset">Отмена</button>
             </div>
@@ -128,14 +143,15 @@
           <img src="img\logo-pink-blue-mobile.svg" width="150" height="40" alt="Pink">
         </div>
         <ul class="social-links">
-          <li class="social-links__item social-links__item--twitter"><a href="#">Твиттер</a></li>
-          <li class="social-links__item social-links__item--facebook"><a href="#">Фейсбук</a></li>
-          <li class="social-links__item social-links__item--youtube"><a href="#">Ютуб</a></li>
+          <li class="social-links__item social-links__item--twitter"><a class="social-links__link" href="#">Твиттер</a></li>
+          <li class="social-links__item social-links__item--facebook"><a class="social-links__link" href="#">Фейсбук</a></li>
+          <li class="social-links__item social-links__item--youtube"><a class="social-links__link" href="#">Ютуб</a></li>
         </ul>
         <div class="copyrights">
-          Разработано<a class="copyrights__link" href="#"><img src="img\logo-htmlacademy.svg" width="29" height="35" alt="logo">HTML academy</a>
+          Разработано<a class="copyrights__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="img\logo-htmlacademy.svg" width="29" height="35" alt="logo">HTML academy</a>
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

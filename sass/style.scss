@@ -10,7 +10,9 @@
 @import "systems.scss";
 @import "features.scss";
 @import "reviews.scss";
+@import "slider.scss";
 @import "prices.scss";
+@import "price-list.scss";
 @import "feedback.scss";
 @import "map.scss";
 @import "page-footer.scss";
@@ -19,8 +21,8 @@
 @import "form-promo.scss";
 @import "offer.scss";
 @import "subscribe-info.scss";
-@import "text-label.scss";
-@import "text-input.scss";
+@import "label.scss";
+@import "input.scss";
 @import "border-wrapper.scss";
 @import "achievement.scss";
 @import "contact-info.scss";
@@ -30,7 +32,8 @@
 @import "send-form.scss";
 @import "social-links.scss";
 @import "copyrights.scss";
-
+@import "modal-send.scss";
+@import "modal-overlay.scss";
 
 //photo.html
 @import "photo-promo.scss";
@@ -38,3 +41,4 @@
 @import "users-photos.scss";
 @import "like-counter.scss";
 @import "user-post.scss";
+@import "filters-form.scss";

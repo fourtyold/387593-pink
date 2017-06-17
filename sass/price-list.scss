@@ -1,0 +1,109 @@
+.price-list {
+  width: 400%;
+  margin-left: -200%;
+  margin-bottom: 41px;
+  border-collapse: collapse;
+  @media ($tablet)  {
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
+
+.price-list__header {
+  width: 25%;
+  padding: 18px 0;
+  background-color: rgb(40, 54, 69);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 26%;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $white-color;
+  text-transform: uppercase;
+  @media ($tablet) {
+    padding: 10px 0;
+    font-size: 16px;
+    background-size: 39%;
+  }
+  @media ($desktop) {
+    padding: 18px 0;
+    font-size: 18px;
+  }
+
+  &--base {
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+  }
+
+  &--standart {
+    border-right: 2px solid rgb(229, 229, 229);
+    border-left: 2px solid rgb(229, 229, 229);
+    background-image: url("../img/bg-hit.svg");
+    @media ($tablet) {
+      border-color: rgb(242, 242, 242);
+      background-image: url("../img/bg-hit-tablet.svg");
+    }
+  }
+
+  &--unlim {
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+  }
+}
+
+.price-list__price {
+  font-size: 24px;
+  font-weight: 300;
+  @media ($tablet) {
+    font-size: 18px;
+  }
+  @media ($desktop) {
+    font-size: 24px;
+  }
+}
+
+.price-list__cell {
+  padding: 14px 22px;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  color: rgb(40, 54, 69);
+  text-transform: uppercase;
+  background-color: $white-color;
+  background-position: 92% 50%;
+  background-repeat: no-repeat;
+  border: 2px solid rgb(229, 229, 229);
+  @media ($tablet) {
+    padding: 7px 16px;
+    text-transform: none;
+    background-position: 50%;
+  }
+  @media ($desktop) {
+    padding: 14px 22px;
+    font-size: 18px;
+  }
+
+  &--yes {
+    background-image: url("../img/icon-yes.svg");
+  }
+
+  &--no {
+    background-image: url("../img/icon-no.svg");
+  }
+}
+
+.price-list__row {
+  &--top {
+    .price-list__cell:not(:first-child) {
+      border-top: none;
+    }
+  }
+}
+
+
+.price-list__cell-name {
+  @media ($tablet) {
+    display: none;
+  }
+}
