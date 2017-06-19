@@ -11,9 +11,15 @@
   @media ($desktop) {
     padding-top: 0;
     margin-top: 79px;
-    width: 50%;
-    padding-left: 4%;
-    box-sizing: border-box;
+    margin-right: auto;
+  }
+
+  .container {
+    @media ($desktop) {
+      width: 435px;
+      padding-left: 35px;
+      padding-right: 10px;
+    }
   }
 }
 

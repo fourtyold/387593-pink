@@ -9,22 +9,24 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-nav">
-        <div class="logo-header">
-          <picture>
-            <source media="(min-width: 960px)" srcset="img/logo-pink-blue-mobile.svg">
-            <source media="(min-width: 660px)" srcset="img/logo-pink-blue-mobile.svg">
-            <img class="logo-header__img" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
-          </picture>
-        </div>
-        <ul class="main-nav__items">
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Главная</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Фотографии</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Конкурс</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
-        </ul>
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-      </nav>
+      <div class="page-header__content-wrapper">
+        <nav class="main-nav">
+          <div class="logo-header">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/logo-pink-blue-mobile.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-blue-mobile.svg">
+              <img class="logo-header__img" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
+            </picture>
+          </div>
+          <ul class="main-nav__items">
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Главная</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Фотографии</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Конкурс</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
+          </ul>
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+        </nav>
+      </div>
     </header>
     <main>
       <section class="get-app">
@@ -44,8 +46,10 @@
         </div>
       </section>
       <section class="features">
-        <p class="features__text">Устали от серости мегаполиса?</p>
-        <p class="features__text features__text--br">Нам есть, что вам предложить!</p>
+        <div class="container">
+          <p class="features__text">Устали от серости мегаполиса?</p>
+          <p class="features__text features__text--br">Нам есть, что вам предложить!</p>
+        </div>
         <div class="features__wrapper">
           <div class="container">
             <ul class="features__list">

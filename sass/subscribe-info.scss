@@ -7,11 +7,17 @@
     order: 1;
   }
   @media ($desktop) {
-    width: 50%;
     margin-top: 87px;
     padding-top: 0;
-    padding-right: 4%;
-    box-sizing: border-box;
+    margin-left: auto;
+  }
+
+  .container {
+    @media ($desktop) {
+      width: 435px;
+      padding-left: 10px;
+      padding-right: 35px;
+    }
   }
 }
 

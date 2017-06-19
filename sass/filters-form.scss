@@ -9,6 +9,7 @@
   @media ($desktop) {
     justify-content: flex-start;
     background-color: rgb(242, 242, 242);
+    padding-top: 57px;
     padding-bottom: 58px;
   }
 }
@@ -23,7 +24,7 @@
     background-color: pink;
   }
   @media ($desktop) {
-    width: 50%;
+    width: 470px;
   }
 }
 
@@ -37,7 +38,8 @@
     align-content: flex-start;
   }
   @media ($desktop) {
-    width: 43.6%;
+    width: 410px;
+    padding-right: 60px;
   }
 }
 
@@ -104,11 +106,8 @@
     margin-right: 23px;
   }
   @media ($desktop) {
-    width: 70%;
+    width: 288px;
     margin-right: 31px;
-  }
-  @media (min-width: 1085px) {
-    margin-right: 17%;
   }
 
   &--active {
@@ -140,12 +139,8 @@
       width: 42vw;
     }
     @media ($desktop) {
-      width: 42.5vw;
-      left: -32%;
-    }
-    @media (min-width: 1085px) {
-      width: 37vw;
-      left: -18%;
+      width: 410px;
+      left: -90px;
     }
   }
 

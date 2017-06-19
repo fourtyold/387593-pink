@@ -2,8 +2,15 @@
   position: relative;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.3);
-  @media (min-width: 960px) {
-    padding: 0 1%;
+  @media ($desktop) {
     min-height: 110px;
+  }
+}
+
+.page-header__content-wrapper {
+  @media ($desktop) {
+    width: 940px;
+    padding: 0 10px;
+    margin: 0 auto;
   }
 }
