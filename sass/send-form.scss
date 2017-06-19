@@ -1,8 +1,12 @@
 .send-form {
   width: 100%;
+  padding-top: 44px;
   @media ($tablet) {
     order: 7;
     padding-top: 67px;
+  }
+  @media ($desktop) {
+    padding-top: 48px;
   }
 
   .container {

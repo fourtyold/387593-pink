@@ -1,11 +1,23 @@
 .subscribe-info {
   padding-top: 34px;
-  min-height: 369px;
+  padding-bottom: 24px;
   @media ($tablet) {
+    padding-top: 74px;
+    padding-bottom: 0;
     order: 1;
   }
   @media ($desktop) {
-    width: 50%;
+    margin-top: 87px;
+    padding-top: 0;
+    margin-left: auto;
+  }
+
+  .container {
+    @media ($desktop) {
+      width: 435px;
+      padding-left: 10px;
+      padding-right: 35px;
+    }
   }
 }
 
@@ -15,5 +27,7 @@
   margin-bottom: 20px;
   @media ($tablet) {
     flex-direction: row;
+    align-items: center;
+    margin-bottom: 57px;
   }
 }

@@ -1,0 +1,90 @@
+.input {
+
+  &--text {
+    flex-grow: 1;
+    padding: 14px 22px;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    color: rgb(40, 54, 69);
+    border: none;
+    outline: none;
+    box-shadow: 0 0 0 2px rgb(229, 229, 229);
+    border-radius: 2px;
+
+    &:hover {
+      box-shadow: 0 0 0 2px rgb(40, 54, 69);
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 2px $red-color;
+    }
+
+    &::placeholder {
+      color: rgb(40, 54, 69);
+    }
+  }
+
+  &--checkbox {
+    display: none;
+
+    &:checked~.label--checkbox::before {
+      background-image: url("../img/icon-yes.svg");
+      background-position: 50%;
+      background-repeat: no-repeat;
+    }
+
+    &:checked~.label--checkbox:active::before {
+      background-image: none;
+    }
+  }
+
+  &--radio {
+    display: none;
+
+    &:checked~.label--radio::after {
+      display: block;
+    }
+
+    &:checked~.label--radio:active::after {
+      display: none;
+    }
+  }
+
+  &--textarea {
+    width: 100%;
+    min-height: 200px;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    color: rgb(40, 54, 69);
+    border: none;
+    outline: none;
+    box-shadow: 0 0 0 2px rgb(229, 229, 229);
+    border-radius: 2px;
+    @media ($tablet) {
+      min-height: 190px;
+      margin-bottom: 48px;
+    }
+    @media ($desktop) {
+      min-height: 124px;
+      margin-bottom: 40px;
+    }
+
+    &:hover {
+      box-shadow: 0 0 0 2px rgb(40, 54, 69);
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 2px $red-color;
+    }
+
+    &::placeholder {
+      color: rgb(40, 54, 69);
+    }
+  }
+}

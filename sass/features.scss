@@ -1,13 +1,14 @@
 .features {
   padding-top: 45px;
   background-color: $white-color;
+  @media ($desktop) {
+    padding-top: 67px;
+  }
 }
 
 .features__text {
-  min-width: 280px;
-  margin: 0 auto;
+  margin: 0;
   margin-bottom: 34px;
-  padding: 0 20px;
   font-size: 24px;
   line-height: 26px;
   font-weight: 300;
@@ -15,21 +16,36 @@
   @media ($tablet) {
     margin-bottom: 0;
     font-size: 40px;
-    line-height: 45px;
+    line-height: 50px;
   }
   @media ($desktop) {
-    padding: 0 113px;
+    width: 735px;
+    margin: 0 auto;
     font-size: 50px;
     line-height: 60px;
+  }
+
+  &--br {
+    @media ($tablet) {
+      padding: 0 40px;
+    }
+    @media ($desktop) {
+      width: 725px;
+      padding: 0;
+    }
   }
 }
 
 .features__wrapper {
   background-color: rgb(242, 242, 242);
-  margin-top: 117px;
+  padding-top: 83px;
+  @media ($tablet) {
+    padding-top: 0;
+    margin-top: 49px;
+  }
   @media ($desktop) {
-    margin-top: -50px;
-    padding-top: 100px;
+    margin-top: 75px;
+    padding-bottom: 67px;
   }
 
   .container {
@@ -46,20 +62,26 @@
   text-align: center;
   @media ($tablet) {
     width: 50%;
+    margin-top: 71px;
     text-align: left;
     order: 2;
   }
   @media ($desktop) {
     display: flex;
+    justify-content: space-between;
     width: auto;
-    text-align: center;
+    margin-top: 0;
   }
 }
 
 .features__item {
+  margin-bottom: 30px;
+  @media ($tablet) {
+    margin-bottom: 33px;
+  }
   @media ($desktop) {
-    width: 33%;
-    padding: 0 36px;
+    width: 32%;
+    text-align: center;
   }
 }
 
@@ -67,12 +89,12 @@
   display: none;
   @media ($desktop) {
     display: block;
+    margin-bottom: 53px;
   }
 }
 
 .features__item-title {
   margin: 0;
-  margin-top: 31px;
   margin-bottom: 13px;
   padding: 0;
   font-size: 18px;
@@ -80,6 +102,8 @@
   font-weight: 700;
   color: $black-color;
   @media ($desktop) {
+    padding: 0 30px;
+    margin-bottom: 25px;
     font-size: 30px;
     line-height: 30px;
   }
@@ -93,16 +117,17 @@
   font-weight: 400;
   color: rgb(40, 54, 69);
   @media ($desktop) {
+    padding: 0 30px;
     font-size: 18px;
     line-height: 30px;
   }
 }
 
 .features__hello-picture {
-  min-height: 317px;
+  min-height: 285px;
   background-color: rgb(242, 242, 242);
   background-image: url("../img/iphone-screen-mobile@1x.png");
-  background-position: 50% 42px;
+  background-position: 50% 9px;
   background-repeat: no-repeat;
   font-size: 0;
   @media ($tablet) {
@@ -110,6 +135,8 @@
     min-height: 483px;
     margin-right: 42px;
     background-size: cover;
+    background-position: 50% 2px;
+    overflow: visible;
     order: 1;
   }
   @media ($desktop) {
@@ -124,37 +151,52 @@
   @media ($tablet) {
     display: block;
   }
+  @media ($desktop) {
+    padding-top: 30px;
+    background-color: rgb(242, 242, 242);
+  }
 }
 
 .features__science-picture {
   min-width: 300px;
+  min-height: 285px;
   margin-right: 10px;
   background-color: rgb(222, 222, 222);
   background-image: url("");
   font-size: 0;
   @media ($desktop) {
-    min-width: 365px;
-    margin-right: 5px;
+    min-height: 348px;
+    margin-right: 67px;
   }
 }
 
 .features__science-title {
   margin: 0;
+  margin-top: 43px;
+  margin-bottom: 11px;
   padding: 0;
+  padding-right: 130px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   color: $black-color;
+  @media ($desktop) {
+    margin-top: 92px;
+    margin-bottom: 22px;
+  }
 }
 
 .features__science-text {
   margin: 0;
+  margin-bottom: 11px;
   padding: 0;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
   color: rgb(40, 54, 69);
   @media ($desktop) {
+    padding-right: 20px;
+    margin-bottom: 31px;
     font-size: 18px;
     line-height: 30px;
   }

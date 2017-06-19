@@ -1,11 +1,13 @@
 .feedback {
   background-color: $white-color;
   padding-top: 43px;
+  @media ($desktop) {
+    padding-top: 65px;
+  }
 }
 
 .feedback__title {
-  width: 280px;
-  margin: 0 auto;
+  margin: 0 ;
   margin-bottom: 38px;
   padding: 0;
   font-size: 24px;
@@ -13,9 +15,16 @@
   font-weight: 300;
   text-align: center;
   @media ($tablet) {
-    width: 370px;
+    padding: 0 25px;
+    margin-bottom: 42px;
     font-size: 40px;
     line-height: 50px;
+  }
+  @media ($desktop) {
+    padding: 0 110px;
+    margin-bottom: 57px;
+    font-size: 50px;
+    line-height: 59px;
   }
 }
 
@@ -31,22 +40,48 @@
   }
   @media ($desktop) {
     justify-content: space-between;
+    margin-bottom: 12px;
   }
 }
 
 .feedback__item {
-  margin-bottom: 24px;
+  margin-bottom: 23px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
   color: rgb(210, 40, 86);
+  text-decoration: none;
   @media ($tablet) {
-    min-width: 300px;
+    width: 298px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 47px;
+    &:last-child {
+      margin-bottom: 28px;
+    }
   }
   @media ($desktop) {
-    width: 33%;
+    width: 32%;
+  }
+
+  &--call {
+    @media ($desktop) {
+      order: 1;
+      padding-right: 15px;
+    }
+  }
+
+  &--write {
+    @media ($desktop) {
+      order: 3;
+      padding-left: 15px;
+    }
+  }
+
+  &--come {
+    @media ($desktop) {
+      order: 2;
+    }
   }
 }
 
@@ -57,4 +92,23 @@
   line-height: 22px;
   font-weight: 700;
   color: rgb(40, 54, 69);
+  @media ($tablet) {
+    margin-bottom: 5px;
+  }
+  @media ($desktop) {
+    margin-bottom: 24px;
+  }
+}
+
+.feedback__item-link {
+  text-decoration: none;
+  color: $red-color;
+  &:hover {
+    text-decoration: underline;
+    color: rgb(40, 54, 69);
+  }
+  &:active {
+    color: rgba(40, 54, 69, 0.3);
+    text-decoration: none;
+  }
 }

@@ -2,6 +2,13 @@
   padding-top: 45px;
   padding-bottom: 40px;
   background-color: $white-color;
+  @media ($tablet) {
+    padding-top: 92px;
+    margin-bottom: 29px;
+  }
+  @media ($desktop) {
+    margin-bottom: 26px;
+  }
 }
 
 .photos-content__content-wrapper {
@@ -12,7 +19,7 @@
 
 .photos-content__text {
   margin: 0;
-  padding: 0 15px;
+  padding: 0;
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
@@ -25,6 +32,12 @@
     padding: 0 150px;
   }
   &--bottom {
-    margin-top: 38px;
+    margin-top: 40px;
+    @media ($tablet) {
+      margin-top: 65px;
+    }
+    @media ($desktop) {
+      margin-top: 26px;
+    }
   }
 }

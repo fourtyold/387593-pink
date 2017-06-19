@@ -1,0 +1,41 @@
+.slider__btn {
+  display: none;
+}
+
+.slider__controls {
+  display: flex;
+  justify-content: center;
+  @media ($desktop) {
+    display: none;
+  }
+  &--prices {
+    @media ($tablet) {
+      display: none;
+    }
+  }
+}
+
+.slider__label {
+  display: block;
+  width: 6px;
+  height: 6px;
+  margin-right: 8px;
+  margin-left: 5px;
+  background-color: rgba(40, 54, 69, 0.3);
+  border: 3px solid $white-color;
+  border-radius: 50%;
+  &:hover {
+    cursor: pointer;
+    background-color: rgba(40, 54, 69, 0.6);
+  }
+  &:active {
+    background-color: $white-color;
+  }
+}
+
+.slider__btn--1:checked~.slider__controls .slider__label--1,
+.slider__btn--2:checked~.slider__controls .slider__label--2,
+.slider__btn--3:checked~.slider__controls .slider__label--3 {
+  background-color: $white-color;
+  border: 3px solid rgb(40, 54, 69);
+}

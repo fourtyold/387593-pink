@@ -1,25 +1,21 @@
 .prices {
-  padding-top: 130px;
-  padding-bottom: 45px;
+  padding-top: 92px;
+  padding-bottom: 47px;
   background-color: rgb(242, 242, 242);
-}
-
-.prices__slider-slide {
-  min-height: 280px;
-  margin-bottom: 35px;
-  outline: 1px solid black;
-}
-
-.prices__list {
-  display: none;
-}
-
-.prices__slider-controls {
-  width: 100px;
-  height: 20px;
-  margin: 0 auto;
-  outline: 1px solid black;
+  overflow: hidden;
   @media ($tablet) {
-    display: none;
+    padding-top: 68px;
+    padding-bottom: 9px;
+  }
+  @media ($desktop) {
+    padding-top: 142px;
+    padding-bottom: 96px;
+  }
+
+  .container {
+    min-height: 280px;
+    @media ($desktop) {
+      min-height: 280px;
+    }
   }
 }

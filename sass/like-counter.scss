@@ -1,6 +1,29 @@
 .like-counter {
+  position: relative;
   margin-top: 10px;
+  padding-left: 31px;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $red-color;
   @media ($tablet) {
     margin-top: auto;
+    padding-left: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 13px;
+    height: 12px;
+    background-image: url("../img/icon-heart.svg");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    @media ($tablet) {
+      left: 84%;
+    }
   }
 }

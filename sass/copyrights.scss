@@ -1,15 +1,24 @@
 .copyrights {
   margin-top: 39px;
   font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   line-height: 18px;
   font-weight: 400;
-  text-align: center;
   @media ($tablet) {
-    margin-top: 0;
+    position: relative;
+    margin-top: 7px;
+    margin-left: 20px;
+  }
+  @media ($desktop) {
+    font-size: 18px;
+    margin-left: 0;
   }
 }
 
 .copyrights__link {
+  margin-left: 15px;
   font-size: 0;
   line-height: 0;
 }

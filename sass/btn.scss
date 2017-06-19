@@ -3,6 +3,10 @@
   text-decoration: none;
   text-align: center;
   font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  cursor: pointer;
 
   &--download {
     width: 250px;
@@ -11,20 +15,31 @@
     margin-bottom: 35px;
     border: 4px solid $white-color;
     border-radius: 27px;
-    font-size: 18px;
-    line-height: 18px;
-    font-weight: 700;
     color: $white-color;
+    &:hover {
+      color: $red-color;
+      background-color: $white-color;
+    }
+    &:active {
+      color: rgba(210, 40, 86, 0.3);
+    }
+    @media ($tablet) {
+      padding: 15px 21px;
+      margin-bottom: 47px;
+    }
+    @media ($desktop) {
+      padding: 13px 21px;
+      margin-bottom: 70px;
+      font-size: 21px;
+      line-height: 21px;
+    }
   }
 
   &--send-form {
     width: 280px;
     margin: 0 auto;
-    margin-top: 48px;
     padding: 16px 5px;
-    font-size: 18px;
     line-height: 30px;
-    font-weight: 700;
     color: $white-color;
     text-transform: uppercase;
     background-color: rgb(42, 171, 109);
@@ -33,6 +48,119 @@
     @media ($tablet) {
       width: 300px;
       margin: 0;
+    }
+
+    &:hover  {
+      background-color: rgb(28, 155, 94);
+      cursor: pointer;
+    }
+
+    &:active {
+      background-color: rgb(28, 155, 94);
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    &:disabled {
+      background-color: rgb(229, 229, 229);
+    }
+  }
+
+  &--modal-close {
+    width: 280px;
+    margin: 0 auto;
+    padding: 16px 5px;
+    line-height: 30px;
+    color: $white-color;
+    text-transform: uppercase;
+    background-color: rgb(42, 171, 109);
+    border: none;
+    border-radius: 2px;
+
+    @media ($tablet) {
+      width: 300px;
+    }
+
+    &:hover  {
+      background-color: rgb(28, 155, 94);
+      cursor: pointer;
+    }
+
+    &:active {
+      background-color: rgb(28, 155, 94);
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    &:disabled {
+      background-color: rgb(229, 229, 229);
+    }
+  }
+
+  &--post {
+    width: 280px;
+    margin: 0 auto;
+    margin-bottom: 13px;
+    padding: 15px 0;
+    border: 3px solid $red-color;
+    border-radius: 27px;
+    background-color: transparent;
+    color: $red-color;
+    @media ($mobile-only) {
+      order: 7;
+    }
+    @media ($tablet) {
+      width: 260px;
+      margin-top: 50px;
+      margin-right: 5%;
+      margin-bottom: 26px;
+    }
+    @media ($desktop) {
+      width: 184px;
+      margin-top: 129px;
+      margin-left: 0;
+      margin-bottom: 0;
+    }
+
+    &:hover {
+      background-color: $red-color;
+      color: $white-color;
+    }
+
+    &:active {
+      background-color: $red-color;
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  &--cancel {
+    width: 280px;
+    margin: 0 auto;
+    margin-bottom: 13px;
+    padding: 15px 0;
+    border: 3px solid rgba(40, 54, 69, 0.1);
+    border-radius: 27px;
+    background-color: transparent;
+    color: rgba(40, 54, 69, 0.1);
+    @media ($mobile-only) {
+      order: 8;
+    }
+    @media ($tablet) {
+      width: 260px;
+      margin-right: 5%;
+      margin-bottom: 0;
+    }
+    @media ($desktop) {
+      width: 184px;
+      margin-top: 129px;
+      margin-right: 0;
+    }
+
+    &:hover {
+      border-color: rgba(40, 54, 69, 0.3);
+    }
+
+    &:active {
+      border-color: rgba(40, 54, 69, 0.3);
+      background-color: rgba(40, 54, 69, 0.3);
     }
   }
 }

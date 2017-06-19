@@ -1,15 +1,17 @@
 .page-footer {
   display: none;
   background-color: $white-color;
-  padding-top: 54px;
+  padding-top: 42px;
   padding-bottom: 50px;
   @media ($tablet) {
     display: block;
     padding-top: 36px;
     .container {
       display: flex;
-      align-items: flex-end;
     }
+  }
+  @media ($desktop) {
+    padding-top: 68px;
   }
 
   &--show {
@@ -20,6 +22,10 @@
 .page-footer__logo {
   text-align: center;
   @media ($tablet) {
+    margin-bottom: 10px;
+  }
+  @media ($desktop) {
+    margin-right: 15px;
   }
 }
 

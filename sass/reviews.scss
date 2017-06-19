@@ -1,14 +1,33 @@
 .reviews {
   padding-top: 44px;
+  padding-bottom: 42px;
   background-color: $white-color;
+  @media ($tablet) {
+    margin-top: 38px;
+  }
+  @media ($desktop) {
+    margin-top: 0;
+    padding-top: 170px;
+    padding-bottom: 15px;
+  }
+}
+
+.reviews__slide {
+  &--2 {
+    display: none;
+  }
+  &--3 {
+    display: none;
+  }
 }
 
 .reviews__item {
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 30px;
   padding: 0;
   text-align: center;
   @media ($tablet) {
+    margin-bottom: 33px;
     display: flex;
     flex-direction: column;
   }
@@ -21,6 +40,7 @@
   font-style: normal;
   @media ($tablet) {
     font-size: 20px;
+    line-height: 32px;
     order: 2;
   }
   @media ($desktop) {
@@ -43,6 +63,7 @@
 }
 
 .reviews__text {
+  position: relative;
   margin: 0 auto;
   margin-top: 14px;
   padding: 0;
@@ -51,10 +72,40 @@
   font-weight: 400;
   color: rgb(40, 54, 69);
   @media ($tablet) {
+    margin-bottom: 35px;
+    font-size: 18px;
     order: 1;
   }
   @media ($desktop) {
-    width: 87%;
+    width: 80%;
+    padding: 0 10%;
+  }
+
+  &::before,
+  &::after {
+    display: none;
+    content: "";
+    width: 21px;
+    height: 42px;
+    outline: 1px solid black;
+    position: absolute;
+    top: 30%;
+    @media ($desktop) {
+      display: block;
+    }
+  }
+
+  &::before {
+    left: 0;
+  }
+
+  &::after {
+    right: 0;
+  }
+
+  &:hover::before,
+  &:hover::after {
+    cursor: pointer;
   }
 }
 
@@ -62,11 +113,4 @@
   @media ($desktop) {
     display: none;
   }
-}
-
-.reviews__slider-controls {
-  width: 100px;
-  height: 20px;
-  margin: 0 auto;
-  outline: 1px solid black;
 }

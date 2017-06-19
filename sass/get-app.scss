@@ -1,17 +1,21 @@
 .get-app {
   min-height: 243px;
-  margin-top: -66px;
-  padding-top: 490px;
+  margin-top: -71px;
+  padding-top: 489px;
   background-color: rgb(29, 38, 49);
   background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
   background-position: 0 176px, top center;
   background-repeat: no-repeat, no-repeat;
   @media ($tablet) {
     margin-top: -110px;
-    padding-top: 210px;
-    min-height: 523px;
+    padding-top: 199px;
+    min-height: 525px;
     background-position: 60% 100%, top center;
     background-size: 450px, cover;
+  }
+  @media ($desktop) {
+    min-height: 636px;
+    padding-top: 217px;
   }
 }
 
@@ -20,18 +24,28 @@
       width: 48.4%;
   }
   @media ($desktop) {
-      width: 31.25%;
+      width: 32%;
   }
 }
 
 .get-app__title {
   display: none;
+  margin: 0;
+  margin-bottom: 32px;
+  padding: 0 50px;
   font-size: 40px;
-  line-height: 45px;;
+  line-height: 47px;;
   font-weight: 300;
   color: $white-color;
+  text-align: center;
   @media ($tablet) {
     display: block;
+  }
+  @media ($desktop) {
+    margin-bottom: 50px;
+    font-size: 50px;
+    line-height: 61px;
+    padding: 0 32px;
   }
 }
 
@@ -43,4 +57,7 @@
   color: $white-color;
   font-weight: 300;
   text-align: center;
+  @media ($tablet) {
+    font-size: 18px;
+  }
 }

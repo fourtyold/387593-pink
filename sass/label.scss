@@ -1,0 +1,119 @@
+.label {
+  display: block;
+
+  &--text {
+    padding-left: 23px;
+    margin-bottom: 7px;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    color: $red-color;
+    text-transform: uppercase;
+    @media ($tablet) {
+      display: inline-block;
+      margin-right: 20px;
+      margin-bottom: 0;
+      padding-left: 0;
+      vertical-align: top;
+    }
+  }
+
+  &--checkbox {
+    position: relative;
+    padding-left: 69px;
+    font-size: 18px;
+    line-height: 30px;
+    color: rgb(40, 54, 69);
+    @media ($tablet) {
+      padding-left: 57px;
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      &::before {
+        border-color: rgb(40, 54, 69);
+      }
+    }
+
+    &:active::before {
+      background-image: url("../img/icon-yes.svg");
+      background-position: 50%;
+      background-repeat: no-repeat;
+      border-color: $red-color;
+    }
+
+    &::before {
+      content: "";
+      width: 35px;
+      height: 35px;
+      position: absolute;
+      top: -4px;
+      left: 0;
+      border: 2px solid rgb(229, 229, 229);
+      border-radius: 2px;
+    }
+  }
+
+  &--radio {
+    position: relative;
+    padding-left: 69px;
+    font-size: 18px;
+    line-height: 30px;
+    color: rgb(40, 54, 69);
+    @media ($desktop) {
+      padding-left: 82px;
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      &::before {
+        border-color: rgb(40, 54, 69);
+      }
+    }
+
+    &:active::before {
+      border-color: $red-color;
+    }
+
+    &:active::after {
+      display: block;
+    }
+
+    &::before {
+      content: "";
+      width: 35px;
+      height: 35px;
+      position: absolute;
+      top: -4px;
+      left: 0;
+      border: 2px solid rgb(229, 229, 229);
+      border-radius: 50%;
+      @media ($tablet) {
+        left: 10px;
+      }
+      @media ($desktop) {
+        left: 24px;
+      }
+    }
+
+    &::after {
+      content: "";
+      width: 15px;
+      height: 15px;
+      display: none;
+      position: absolute;
+      top: 9px;
+      left: 12px;
+      background-color: $red-color;
+      border-radius: 50%;
+      @media ($tablet) {
+        left: 22px;
+      }
+      @media ($desktop) {
+        left: 35px;
+      }
+    }
+  }
+}
