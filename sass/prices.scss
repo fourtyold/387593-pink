@@ -2,13 +2,17 @@
   padding-top: 92px;
   padding-bottom: 47px;
   background-color: rgb(242, 242, 242);
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100%;
   overflow: hidden;
   @media ($tablet) {
     padding-top: 68px;
     padding-bottom: 9px;
   }
   @media ($desktop) {
-    padding-top: 142px;
+    padding-top: 152px;
     padding-bottom: 96px;
   }
 

@@ -68,12 +68,22 @@
       position: absolute;
       top: -2px;
       right: -2px;
-      background-color: rgb(190, 194, 199);
+      background-color: rgb(229, 229, 229);
+      background-repeat: no-repeat;
+      background-position: 50%;
     }
   }
   @media ($desktop) {
     width: 45.6%;
     margin-bottom: 11px;
+  }
+
+  &--phone::after {
+    background-image: url("../img/icon-phone.svg");
+  }
+
+  &--mail::after {
+    background-image: url("../img/icon-mail.svg");
   }
 
   .label {

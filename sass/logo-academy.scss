@@ -1,0 +1,11 @@
+.logo-academy {
+  fill: $red-color;
+
+  &:hover {
+    fill: rgb(40, 54, 69);
+  }
+
+  &:active {
+    fill: rgba(40, 54, 69, 0.3);
+  }
+}

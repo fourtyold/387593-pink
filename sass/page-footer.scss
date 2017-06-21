@@ -19,16 +19,6 @@
   }
 }
 
-.page-footer__logo {
-  text-align: center;
-  @media ($tablet) {
-    margin-bottom: 10px;
-  }
-  @media ($desktop) {
-    margin-right: 15px;
-  }
-}
-
 .page-footer__content-wrapper {
   width: 280px;
   margin: 0 auto;
