@@ -30,7 +30,7 @@
     display: none;
 
     &:checked~.label--checkbox::before {
-      background-image: url("../img/icon-yes.svg");
+      background-image: url("../img/icon-yes-form.svg");
       background-position: 50%;
       background-repeat: no-repeat;
     }

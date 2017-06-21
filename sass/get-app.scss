@@ -6,16 +6,28 @@
   background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
   background-position: 0 176px, top center;
   background-repeat: no-repeat, no-repeat;
+  @media ($retina) {
+    background-image: url("../img/iphone-hand-mobile@2x.png"), url("../img/bg-back-mobile@2x.jpg");
+    background-size: 258px, 700px;
+  }
   @media ($tablet) {
     margin-top: -110px;
     padding-top: 199px;
     min-height: 525px;
-    background-position: 60% 100%, top center;
-    background-size: 450px, cover;
+    background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
+    background-position: 50% 100%, 50%;
+    background-size: auto;
+    @media ($retina) {
+      background-image: url("../img/iphone-hand-tablet@2x.png"), url("../img/bg-back-tablet@2x.jpg");
+      background-size: 700px, 1200px;
+    }
   }
   @media ($desktop) {
     min-height: 636px;
     padding-top: 217px;
+    background-image: url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop@1x.jpg");
+    background-size: auto;
+    background-position: -29% 100%, 50%;
   }
 }
 

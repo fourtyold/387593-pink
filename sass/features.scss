@@ -37,8 +37,12 @@
 }
 
 .features__wrapper {
-  background-color: rgb(242, 242, 242);
   padding-top: 83px;
+  background-color: rgb(242, 242, 242);
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100%;
   @media ($tablet) {
     padding-top: 0;
     margin-top: 49px;
@@ -130,14 +134,22 @@
   background-position: 50% 9px;
   background-repeat: no-repeat;
   font-size: 0;
+  @media ($retina) {
+    background-image: url("../img/iphone-screen-mobile@2x.png");
+    background-size: 157px;
+  }
   @media ($tablet) {
     width: 268px;
     min-height: 483px;
     margin-right: 42px;
-    background-size: cover;
+    background-color: transparent;
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
     background-position: 50% 2px;
-    overflow: visible;
-    order: 1;
+    background-size: auto;
+    @media ($retina) {
+      background-image: url("../img/iphone-screen-3-tablet@2x.png");
+      background-size: 268px;
+    }
   }
   @media ($desktop) {
     display: none;
@@ -158,15 +170,49 @@
 }
 
 .features__science-picture {
-  min-width: 300px;
-  min-height: 285px;
+  min-width: 235px;
+  min-height: 203px;
+  position: relative;
   margin-right: 10px;
-  background-color: rgb(222, 222, 222);
-  background-image: url("");
-  font-size: 0;
+  padding-top: 83px;
+  padding-left: 64px;
+  background-color: $white-color;
+  background-image: url("../img/icon-timer.svg");
+  background-repeat: no-repeat;
+  background-position: 3px 9px;
+  background-size: 235px;
+  font-size: 96px;
+  line-height: 150px;
+  font-weight: 700;
+  color: $red-color;
   @media ($desktop) {
-    min-height: 348px;
-    margin-right: 67px;
+    min-height: 250px;
+    margin-right: 51px;
+    padding-left: 80px;
+    padding-top: 96px;
+    font-size: 120px;
+    line-height: 186px;
+    background-color: rgb(242, 242, 242);
+    background-size: 300px;
+    background-position: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 62px;
+    left: 19px;
+    width: 174px;
+    height: 174px;
+    border: 14px solid $red-color;
+    border-radius: 50%;
+    @media ($desktop) {
+      top: 69px;
+      left: 23px;
+      width: 219px;
+      height: 219px;
+      border-width: 17px;
+    }
   }
 }
 

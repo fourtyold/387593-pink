@@ -163,4 +163,40 @@
       background-color: rgba(40, 54, 69, 0.3);
     }
   }
+
+  &--reviews {
+    display: none;
+    width: 21px;
+    height: 42px;
+    position: absolute;
+    top: 21%;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    // outline: none;
+    border: none;
+    font-size: 0;
+    opacity: 0.3;
+    @media ($desktop) {
+      display: block;
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0;
+    }
+  }
+
+  &--previous {
+    left: 10px;
+    background-image: url("../img/icon-review-arrow-left.svg");
+  }
+
+  &--next {
+    right: 10px;
+    background-image: url("../img/icon-review-arrow-right.svg");
+  }
 }

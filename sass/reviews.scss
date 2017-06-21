@@ -8,7 +8,14 @@
   @media ($desktop) {
     margin-top: 0;
     padding-top: 170px;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    background-position: center 70px;
+  }
+
+  .container {
+    position: relative;
   }
 }
 
@@ -80,33 +87,44 @@
     width: 80%;
     padding: 0 10%;
   }
-
-  &::before,
-  &::after {
-    display: none;
-    content: "";
-    width: 21px;
-    height: 42px;
-    outline: 1px solid black;
-    position: absolute;
-    top: 30%;
-    @media ($desktop) {
-      display: block;
-    }
-  }
-
-  &::before {
-    left: 0;
-  }
-
-  &::after {
-    right: 0;
-  }
-
-  &:hover::before,
-  &:hover::after {
-    cursor: pointer;
-  }
+  //
+  // &::before,
+  // &::after {
+  //   display: none;
+  //   content: "";
+  //   width: 21px;
+  //   height: 42px;
+  //   outline: 1px solid black;
+  //   position: absolute;
+  //   top: 30%;
+  //   background-repeat: no-repeat;
+  //   background-position: 50%;
+  //   opacity: 0.3;
+  //   @media ($desktop) {
+  //     display: block;
+  //   }
+  // }
+  //
+  // &::before {
+  //   left: 0;
+  //   background-image: url("../img/icon-review-arrow-left.svg");
+  // }
+  //
+  // &::after {
+  //   right: 0;
+  //   background-image: url("../img/icon-review-arrow-right.svg");
+  // }
+  //
+  // &:hover::before,
+  // &:hover::after {
+  //   cursor: pointer;
+  //   opacity: 0.6;
+  // }
+  //
+  // &:active::before,
+  // &:active::after {
+  //   opacity: 0;
+  // }
 }
 
 .reviews__quotes {

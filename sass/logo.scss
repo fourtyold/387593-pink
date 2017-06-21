@@ -1,0 +1,93 @@
+.logo {
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--header {
+    min-width: 280px;
+    margin: 0 auto;
+    margin-bottom: 1px;
+    padding: 21px 20px;
+    box-shadow: 0 1px 0 0 $black-color;
+    @media ($tablet) {
+      padding: 32px 20px;
+    }
+    @media ($desktop) {
+      padding: 0;
+      margin: 0;
+      margin-right: 39px;
+      display: flex;
+      align-items: center;
+      background-color: transparent;
+      box-shadow: none;
+    }
+
+    .logo__picture {
+      fill: $white-color;
+
+      &:hover {
+        fill: $red-color;
+      }
+
+      &:active {
+        fill: $white-color;
+      }
+    }
+  }
+
+  &--footer {
+    text-align: center;
+    @media ($tablet) {
+      margin-bottom: 10px;
+    }
+    @media ($desktop) {
+      margin-right: 15px;
+    }
+
+    .logo__picture {
+      fill: rgb(40, 54, 69);
+
+      &:hover {
+        fill: $red-color;
+      }
+
+      &:active {
+        fill: rgb(40, 54, 69);
+      }
+    }
+  }
+}
+
+.logo__picture {
+
+  &--mobile {
+    @media ($tablet) {
+      display: none;
+    }
+  }
+
+  &--tablet {
+    display: none;
+    @media ($tablet-only) {
+      display: inline;
+    }
+  }
+
+  &--predesktop {
+    @media ($desktop) {
+      display: none;
+    }
+  }
+
+  &--desktop {
+    display: none;
+    @media ($desktop) {
+      display: inline;
+    }
+  }
+}
+
+.logo__star {
+  fill: $red-color;
+}

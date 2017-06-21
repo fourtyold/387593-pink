@@ -1,0 +1,39 @@
+.logo__picture {
+  fill: $white-color;
+
+  &--mobile {
+    @media ($tablet) {
+      display: none;
+    }
+  }
+
+  &--tablet {
+    display: none;
+    @media ($tablet-only) {
+      display: inline;
+    }
+  }
+
+  &--desktop {
+    display: none;
+    @media ($desktop) {
+      display: inline;
+    }
+  }
+
+  &:hover {
+    fill: $red-color;
+  }
+
+  &:active {
+    fill: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.logo__star {
+  fill: $red-color;
+
+  &:active {
+    fill: rgba(210, 40, 86, 0.3);
+  }
+}
