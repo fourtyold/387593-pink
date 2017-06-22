@@ -47,6 +47,30 @@
     box-shadow: none;
   }
 
+  &--active {
+    position: relative;
+
+    .main-nav__link {
+
+      &:hover,
+      &:active {
+        color: $white-color;
+      }
+    }
+
+    &:after {
+      content: "";
+      display: none;
+      height: 2px;
+      bottom: -5px;
+      left: 0;
+      right: 0;
+      background-color: $white-color;
+      @media ($desktop) {
+        display: block;
+      }
+    }
+  }
 }
 
 .main-nav__link {
