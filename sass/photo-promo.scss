@@ -6,7 +6,7 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: 50% 4%;
   background-repeat: no-repeat;
-  @media ($retina) {
+  @media ($retina) and ($mobile-only) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
     background-size: 700px;
   }
@@ -14,11 +14,26 @@
     min-height: 259px;
     margin-top: -110px;
     padding-top: 176px;
-    background-size: cover;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-size: auto;
+    background-position: 50% 4%;
+    @media ($retina) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 1200px;
+      background-position: 50% 1%;
+    }
   }
   @media ($desktop) {
     min-height: 220px;
     padding-top: 174px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-size: auto;
+    background-position: 50% 0;
+    @media ($retina) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 2560px;
+      background-position: 50% -3%;
+    }
   }
 }
 
