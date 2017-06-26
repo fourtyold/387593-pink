@@ -1,9 +1,5 @@
 .logo {
 
-  &:active {
-    opacity: 0.3;
-  }
-
   &--header {
     min-width: 280px;
     margin: 0 auto;
@@ -32,6 +28,7 @@
 
       &:active {
         fill: $white-color;
+        opacity: 0.3;
       }
     }
   }
@@ -54,6 +51,7 @@
 
       &:active {
         fill: rgb(40, 54, 69);
+        opacity: 0.3;
       }
     }
   }

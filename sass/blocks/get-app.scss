@@ -3,39 +3,45 @@
   margin-top: -71px;
   padding-top: 489px;
   background-color: rgb(29, 38, 49);
-  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
-  background-position: 0 176px, top center;
-  background-repeat: no-repeat, no-repeat;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
   @media ($retina) and ($mobile-only) {
-    background-image: url("../img/iphone-hand-mobile@2x.png"), url("../img/bg-back-mobile@2x.jpg");
-    background-size: 258px, 700px;
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 700px;
   }
   @media ($tablet) {
     margin-top: -110px;
     padding-top: 199px;
     min-height: 525px;
-    background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
-    background-position: 50% 100%, 50%;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: 50%;
     background-size: auto;
     @media ($retina) {
-      background-image: url("../img/iphone-hand-tablet@2x.png"), url("../img/bg-back-tablet@2x.jpg");
-      background-size: 700px, 1200px;
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 1200px;
     }
   }
   @media ($desktop) {
     min-height: 636px;
     padding-top: 217px;
-    background-image: url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop@1x.jpg");
+    background-image: url("../img/bg-back-desktop@1x.jpg");
     background-size: auto;
-    background-position: -29% 100%, 50%;
+    background-position: 50%;
     @media ($retina) {
-      background-image: url("../img/iphone-hand-desktop@2x.png"), url("../img/bg-back-desktop@2x.jpg");
-      background-size: 1050px, 2560px;
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 2560px;
     }
+  }
+
+  .container {
+    position: relative;
   }
 }
 
 .get-app__wrapper {
+  position: relative;
+  z-index: 1;
   @media ($tablet) {
       width: 48.4%;
   }
@@ -75,5 +81,24 @@
   text-align: center;
   @media ($tablet) {
     font-size: 18px;
+  }
+}
+
+.get-app__img-wrapper {
+  position: absolute;
+  width: 258px;
+  top: -313px;
+  left: 0;
+  z-index: 0;
+  overflow: hidden;
+  @media ($tablet) {
+    width: 660px;
+    top: -20px;
+    left: -20px;
+  }
+  @media ($desktop) {
+    width: 940px;
+    top: -9px;
+    left: 27px;
   }
 }

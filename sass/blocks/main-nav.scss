@@ -9,6 +9,7 @@
 
   &--closed {
     background-color: transparent;
+
     .main-nav__toggle {
       background-image: url("../img/icon-menu-burger.svg");
 
@@ -17,12 +18,15 @@
       }
     }
 
-    .logo-header {
+    .logo--header {
       box-shadow: none;
     }
 
     .main-nav__items {
       display: none;
+      @media ($desktop) {
+        display: flex;
+      }
     }
   }
 }
@@ -127,5 +131,9 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  &--nojs {
+    display: none;
   }
 }
