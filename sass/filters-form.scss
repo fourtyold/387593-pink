@@ -58,13 +58,16 @@
     margin-right: 10px;
     margin-top: 9px;
     margin-bottom: 0;
-    fill: $red-color;
   }
   @media ($desktop) {
     width: 44px;
     height: 44px;
     margin-top: 0;
     margin-left: 0;
+  }
+
+  &:hover {
+    fill: rgba(40, 54, 69, 0.5);
   }
 
   &--crop {
@@ -100,6 +103,10 @@
   }
 
   &--active {
+    fill: $red-color;
+  }
+
+  &--active:hover {
     fill: $red-color;
   }
 }

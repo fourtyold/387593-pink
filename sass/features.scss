@@ -232,10 +232,17 @@
   }
 }
 
+.features__science-hours {
+  @media ($tablet-only) {
+    display: block;
+  }
+}
+
 .features__science-text {
   margin: 0;
   margin-bottom: 11px;
   padding: 0;
+  padding-right: 5px;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
