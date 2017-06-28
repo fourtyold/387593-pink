@@ -37,7 +37,7 @@
     }
 
     &:active::before {
-      background-image: url("../img/icon-yes.svg");
+      background-image: url("../img/icon-yes-form.svg");
       background-position: 50%;
       background-repeat: no-repeat;
       border-color: $red-color;
@@ -77,14 +77,10 @@
       border-color: $red-color;
     }
 
-    &:active::after {
-      display: block;
-    }
-
     &::before {
       content: "";
-      width: 35px;
-      height: 35px;
+      width: 36px;
+      height: 36px;
       position: absolute;
       top: -4px;
       left: 0;
@@ -100,11 +96,11 @@
 
     &::after {
       content: "";
-      width: 15px;
-      height: 15px;
+      width: 16px;
+      height: 16px;
       display: none;
       position: absolute;
-      top: 9px;
+      top: 8px;
       left: 12px;
       background-color: $red-color;
       border-radius: 50%;
@@ -112,7 +108,7 @@
         left: 22px;
       }
       @media ($desktop) {
-        left: 35px;
+        left: 36px;
       }
     }
   }

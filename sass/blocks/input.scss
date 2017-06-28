@@ -29,13 +29,13 @@
   &--checkbox {
     display: none;
 
-    &:checked~.label--checkbox::before {
+    &:checked ~ .label--checkbox::before {
       background-image: url("../img/icon-yes-form.svg");
       background-position: 50%;
       background-repeat: no-repeat;
     }
 
-    &:checked~.label--checkbox:active::before {
+    &:checked ~ .label--checkbox:active::before {
       background-image: none;
     }
   }
@@ -43,12 +43,8 @@
   &--radio {
     display: none;
 
-    &:checked~.label--radio::after {
+    &:checked + .label--radio::after {
       display: block;
-    }
-
-    &:checked~.label--radio:active::after {
-      display: none;
     }
   }
 
